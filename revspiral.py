@@ -14,7 +14,7 @@ def base_spiral(nrow, ncol):
     def to_spiral(A):
     A = np.array(A)
     B = np.empty_like(A)
-    B.flat[base_spiral(shape)] = A.flat
+    B.flat[base_spiral(*A.shape)] = A.flat
     return B
 
 
