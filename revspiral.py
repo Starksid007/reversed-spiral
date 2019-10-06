@@ -9,7 +9,7 @@ def spiral_ccw(A):
     return np.concatenate(out)
     
 def base_spiral(nrow, ncol):
-    return spiral_ccw(np.arange(ncol).reshape(nrow,ncol))[::-1]
+    return spiral_ccw(np.arange(nrow,ncol).reshape(nrow,ncol))[::-1]
     
     def to_spiral(A):
     A = np.array(A)
