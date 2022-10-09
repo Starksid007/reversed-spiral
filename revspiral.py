@@ -14,12 +14,20 @@ def base_spiral(nrow, ncol):
     def to_spiral(A):
     A = np.array(A)
     B = np.empty_like(A)
+    C=np.array(A)
+    D=np.empty_like(B)
     B.flat[base_spiral(*A.shape)] = A.flat
+    '''D=np.empty_like(B)
+    B.flat[base_spiral(*A.shape)] = A.flat'''
     return B
 
 
 B = np.arange(1,26).reshape(5,5)
+C=np.arange(1,24).reshape(5,5)
 print(to_spiral(B))
+print(to_spiral(C))
+
+
 
 
 
